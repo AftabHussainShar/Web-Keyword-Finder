@@ -14,7 +14,7 @@ def is_media_url(url):
     media_extensions = {'.jpg', '.jpeg', '.pdf', '.png', '.gif', '.bmp', '.svg', '.mp3', '.mp4', '.avi', '.mov'}
     return any(ext in url.lower() for ext in media_extensions)
 
-
+# def check_keywords(url, keywords):
 def check_keywords(url, keywords):
     try:
         response = requests.get(url)
