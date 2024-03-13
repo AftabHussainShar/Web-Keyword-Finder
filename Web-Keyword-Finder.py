@@ -85,7 +85,7 @@ result_column_letter = 'E'
 if result_column_letter not in sheet.iter_cols(min_col=1, max_col=sheet.max_column, min_row=1, max_row=1):
     sheet.insert_cols(sheet.max_column + 1)
     sheet.cell(row=1, column=sheet.max_column, value='Nesten')
-
+# Loop through URLs and process
 if urls:
     for url in urls:
         row_index = urls.index(url) + 2
