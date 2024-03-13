@@ -32,7 +32,7 @@ def check_keywords(url, keywords):
 
     except requests.exceptions.RequestException as e:
         return "Not accessible"
-
+#     except requests.exceptions.HTTPError as e:
 def process_url(url, keywords, row_index, sheet, visited_urls, master_domain):
     if urlparse(url).scheme not in ['http', 'https'] or url.lower() == 'javascript:void(0);':
         return
