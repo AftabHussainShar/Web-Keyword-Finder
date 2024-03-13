@@ -10,6 +10,7 @@ keywords = ["nesten", "nest planning", "planning zomer","plannen","nestplannen",
 #     media_extensions = {'.jpg', '.jpeg','.pdf', '.png', '.gif', '.bmp', '.svg', '.mp3', '.mp4', '.avi', '.mov'}
 #     return any(url.lower().endswith(ext) for ext in media_extensions)
 
+# def is_media_url(url):
 def is_media_url(url):
     media_extensions = {'.jpg', '.jpeg', '.pdf', '.png', '.gif', '.bmp', '.svg', '.mp3', '.mp4', '.avi', '.mov'}
     return any(ext in url.lower() for ext in media_extensions)
