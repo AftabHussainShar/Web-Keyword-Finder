@@ -92,5 +92,5 @@ if urls:
         visited_urls = set()
         master_domain = urlparse(url).netloc
         process_url(url, keywords, row_index, sheet, visited_urls, master_domain)
-
+# Save Excel file
 workbook.save('websites_with_results.xlsx')
