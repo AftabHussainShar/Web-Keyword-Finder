@@ -74,6 +74,7 @@ def process_url(url, keywords, row_index, sheet, visited_urls, master_domain):
     except requests.exceptions.RequestException as e:
         print(f"Error accessing sub-links for {url}: {e}")
 
+# Read URLs from Excel file
 workbook = openpyxl.load_workbook('websites.xlsx')
 sheet = workbook.active
 urls = [cell.value for cell in sheet['A'][1:]]
